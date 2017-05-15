@@ -26,6 +26,7 @@ if(isset($_GET["lang"])) {
     case "fr_lu":
       $lang = "fr_FR.utf8";
       break;
+    case "de":
     case "de_at":
     case "de_li":
     case "de_de":

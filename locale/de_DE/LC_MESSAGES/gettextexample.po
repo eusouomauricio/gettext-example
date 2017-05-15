@@ -19,29 +19,30 @@ msgstr ""
 
 #: index.php:69
 msgid "Welcome to the gettext() example"
-msgstr ""
+msgstr "Willkommen bey gettext() Beispiel"
 
 #: index.php:73
 msgid "You are not logued"
-msgstr ""
+msgstr "Sie sind nicht angemldet"
 
 #: index.php:80
 #, php-format
 msgid "There is only %d thing"
 msgid_plural "There are %d things"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Es gibt nur %d Ding"
+msgstr[1] "Es gibt %d Ding"
 
 #: index.php:82
 msgid "There is nothing"
-msgstr ""
+msgstr "Da ist nichts"
 
 #: index.php:89
 #, php-format
 msgid ""
 "<p><b>Debug mode</b><br /><i>$username=%s<br />$count=%d<br />$lang=%s</i><p>"
 msgstr ""
+"<p><b>Debug-Modus</b><br /><i>$username=%s<br />$count=%d<br />$lang=%s</i><p>"
 
 #: test.php:12
 msgid "This is a demo page"
-msgstr ""
+msgstr "Dies ist eine Demo-Seite"

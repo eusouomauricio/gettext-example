@@ -22,8 +22,8 @@ msgid "Welcome to the gettext() example"
 msgstr "Bienvenue sur l'exemple gettext"
 
 #: index.php:73
-msgid "Vous n'êtes pas connecté(e)"
-msgstr ""
+msgid "You are not logued"
+msgstr "Vous n'êtes pas connecté(e)"
 
 #: index.php:80
 #, php-format
