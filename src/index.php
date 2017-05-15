@@ -2,12 +2,15 @@
 
 /**
  *  @file       index.php
- *  @version    0.1
+ *  @version    1.0
  *  @date       2017-05-15
  *  @author     VO, Nhu-Hoai Robert <nhuhoai.vo@franicflow.ch>
  *  @copyright  FRANIC Flow Sàrl
  *  @brief      Example using gettext on php project
  */
+
+// Check if gettext is enable
+if(!function_exists("gettext")) die("gettext is not enable");
 
 // Default language
 $lang = "en_US.utf8";
@@ -23,6 +26,7 @@ if(isset($_GET["lang"])) {
     case "fr_lu":
       $lang = "fr_FR.utf8";
       break;
+    case "de":
     case "de_at":
     case "de_li":
     case "de_de":
@@ -33,9 +37,9 @@ if(isset($_GET["lang"])) {
   }
 }
 
-$username = "Anonymous";
+$username = "";
 // Detect username test param
-if(isset($_GET["username"])) {
+if(!empty($_GET["username"])) {
   $username = urldecode($_GET["username"]);
 }
 
@@ -66,7 +70,7 @@ textdomain($domain);
 print("<h1>" . _("Welcome to the gettext() example") . "</h1>");
 
 // Display username
-if($username == "Anonymous") {
+if($username == "") {
   print("<p>" . _("You are not logued") . ".</p>");
 } else {
   printf("<p>Hello %s!</p>", $username);
@@ -79,7 +83,16 @@ if($count > 0) {
   print("<p>" . _("There is nothing") . ".</p>");
 }
 
+// Print test page
+include_once "test.php";
+
 // Debug mode (just display params
 printf(_("<p><b>Debug mode</b><br /><i>\$username=%s<br />\$count=%d<br />\$lang=%s</i><p>"), $username, $count, $lang);
+
+$language = _("Language");
+$count = _("Count");
+$name = _("Username");
+$update = _("Update data");
+print("<hr /><form action=\"\" method=\"GET\"><p><b>{$language}</b> <select name=\"lang\"><option>en</option><option>fr</option><option>de</option></select></p><p><b>{$count}</b> <select name=\"count\"><option>0</option><option>1</option><option>2</option><option>3</option></select></p><p><b>{$name}</b> <input type=\"text\" name=\"username\" /></p><p><input type=\"submit\" value=\"{$update}\" /></p></form>");
 
 ?>

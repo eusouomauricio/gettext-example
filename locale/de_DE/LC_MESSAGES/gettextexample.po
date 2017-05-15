@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-15 11:34+0200\n"
-"PO-Revision-Date: 2017-05-15 11:52+0200\n"
+"POT-Creation-Date: 2017-05-15 15:13+0200\n"
+"PO-Revision-Date: 2017-05-15 14:04+0200\n"
 "Last-Translator: Nhu-Hoai Robert VO <nhuhoai.vo@franicflow.ch>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -17,27 +17,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: index.php:66
+#: index.php:69 index.php:70
 msgid "Welcome to the gettext() example"
-msgstr "Willkommen im gettext() Beispiel"
+msgstr "Willkommen bey gettext() Beispiel"
 
-#: index.php:70
+#: index.php:73 index.php:74
 msgid "You are not logued"
-msgstr "Sie sind nicht angemeldet"
+msgstr "Sie sind nicht angemldet"
 
-#: index.php:77
-#, php-format
+#: index.php:80 index.php:81
 msgid "There is only %d thing"
 msgid_plural "There are %d things"
 msgstr[0] "Es gibt nur %d Ding"
 msgstr[1] "Es gibt %d Dinge"
 
-#: index.php:79
+#: index.php:82 index.php:83
 msgid "There is nothing"
 msgstr "Da ist nichts"
 
-#: index.php:83
+#: index.php:89 index.php:90
 #, php-format
 msgid ""
 "<p><b>Debug mode</b><br /><i>$username=%s<br />$count=%d<br />$lang=%s</i><p>"
-msgstr "<p><b>Debug-Modus</b><br /><i>$username=%s<br />$count=%d<br />$lang=%s</i></p>"
+msgstr ""
+"<p><b>Debug-Modus</b><br /><i>$username=%s<br />$count=%d<br />$lang=%s</"
+"i><p>"
+
+#: test.php:12
+msgid "This is a demo page"
+msgstr "Dies ist eine Demo-Seite"
+
+#: index.php:92
+msgid "Language"
+msgstr "Sprache"
+
+#: index.php:93
+msgid "Count"
+msgstr "Meter"
+
+#: index.php:94
+msgid "Username"
+msgstr "Benutzername"
+
+#: index.php:95
+msgid "Update data"
+msgstr "Daten aktualisieren"
+
