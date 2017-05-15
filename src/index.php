@@ -39,7 +39,7 @@ if(isset($_GET["lang"])) {
 
 $username = "Anonymous";
 // Detect username test param
-if(isset($_GET["username"])) {
+if(!empty($_GET["username"])) {
   $username = urldecode($_GET["username"]);
 }
 
