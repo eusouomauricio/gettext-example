@@ -9,6 +9,8 @@
  *  @brief      Example using gettext on php project
  */
 
+error_reporting(E_ALL);
+
 // Default language
 $lang = "en_US.utf8";
 
@@ -59,7 +61,7 @@ setlocale(LC_ALL, $lang);
 $domain = 'gettextexample';
 // If you only clone the project, do not edit the second parameter. 
 // Just put your locale folder path
-bindtextdomain($domain, "../locale");
+bindtextdomain($domain, __DIR__ . "/locale");
 textdomain($domain);
 
 // Display html code
