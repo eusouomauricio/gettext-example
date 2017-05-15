@@ -59,7 +59,7 @@ if(isset($_GET["count"])) {
 setlocale(LC_ALL, $lang);
 
 // Please rename your .po and .mo with the domain name
-$domain = 'gettext-example';
+$domain = 'gettextexample';
 // If you only clone the project, do not edit the second parameter. 
 // Just put your locale folder path
 bindtextdomain($domain, __DIR__ . "/../locale");
