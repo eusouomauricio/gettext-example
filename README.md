@@ -10,6 +10,13 @@ Found a lot of things on the web but no working example.
 3. Go to src/index.php on your navigator (for example http://localhost/path/to/project/src/index.php)
 4. Enjoy (or not...)
 
+## Tests
+
+ -  Success: On Ubuntu 16.04 with PHP7.0
+ -  Success: On Ubuntu 17.04 with PHP7.0
+ -  Success: Host infomaniak.ch Linux with PHP5.6
+ -  Failed: Windows 10 with PHP5.6
+
 ## How make your own internationalization
 
 __First, sorry for my english__

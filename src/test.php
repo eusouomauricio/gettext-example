@@ -2,7 +2,7 @@
 
 /**
  *  @file       test.php
- *  @version    0.1
+ *  @version    1.0
  *  @date       2017-05-15
  *  @author     VO, Nhu-Hoai Robert <nhuhoai.vo@franicflow.ch>
  *  @copyright  FRANIC Flow Sàrl
