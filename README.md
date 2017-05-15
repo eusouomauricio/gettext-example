@@ -160,7 +160,6 @@ msgfmt it\_IT/LS_MESSAGES/mydomain.po -o it\_IT/LS_MESSAGES/mydomain.mo
 
  -  Voilà! This is the theory, maybe it will work first time if you are lucky but with this example, you are close to success (or not...)!
 
-
 ## Sources
 
  -  [O'Reilly example](http://www.onlamp.com/pub/a/php/2002/06/13/php.html)

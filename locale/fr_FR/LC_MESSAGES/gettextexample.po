@@ -62,3 +62,4 @@ msgstr "Nom d'utilisateur"
 #: index.php:95
 msgid "Update data"
 msgstr "Mise à jour des données"
+

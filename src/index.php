@@ -55,15 +55,15 @@ if(isset($_GET["count"])) {
 // Source: http://stackoverflow.com/questions/18366381/check-if-gettext-language-is-available
 
 // If nothing happend, try to uncomment those two next lines, try first one alone, then second one and both
-// putenv("LANG={$lang}");
-// putenv("LANGUAGE={$lang}");
+putenv("LANG={$lang}");
+putenv("LANGUAGE={$lang}");
 setlocale(LC_ALL, $lang);
 
 // Please rename your .po and .mo with the domain name
 $domain = 'gettextexample';
 // If you only clone the project, do not edit the second parameter. 
 // Just put your locale folder path
-bindtextdomain($domain, __DIR__ . "/../locale");
+bindtextdomain($domain, "../locale");
 textdomain($domain);
 
 // Display html code

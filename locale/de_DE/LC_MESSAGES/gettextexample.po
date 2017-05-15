@@ -26,11 +26,10 @@ msgid "You are not logued"
 msgstr "Sie sind nicht angemldet"
 
 #: index.php:80 index.php:81
-#, php-format
 msgid "There is only %d thing"
 msgid_plural "There are %d things"
 msgstr[0] "Es gibt nur %d Ding"
-msgstr[1] "Es gibt %d Ding"
+msgstr[1] "Es gibt %d Dinge"
 
 #: index.php:82 index.php:83
 msgid "There is nothing"
@@ -63,3 +62,4 @@ msgstr "Benutzername"
 #: index.php:95
 msgid "Update data"
 msgstr "Daten aktualisieren"
+
