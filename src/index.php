@@ -37,7 +37,7 @@ if(isset($_GET["lang"])) {
   }
 }
 
-$username = "Anonymous";
+$username = "";
 // Detect username test param
 if(!empty($_GET["username"])) {
   $username = urldecode($_GET["username"]);
@@ -70,7 +70,7 @@ textdomain($domain);
 print("<h1>" . _("Welcome to the gettext() example") . "</h1>");
 
 // Display username
-if($username == "Anonymous") {
+if($username == "") {
   print("<p>" . _("You are not logued") . ".</p>");
 } else {
   printf("<p>Hello %s!</p>", $username);
