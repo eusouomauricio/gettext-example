@@ -9,6 +9,9 @@
  *  @brief      Example using gettext on php project
  */
 
+// Check if gettext is enable
+if(!function_exists("gettext")) die("gettext is not enable");
+
 // Default language
 $lang = "en_US.utf8";
 
@@ -78,6 +81,9 @@ if($count > 0) {
 } else {
   print("<p>" . _("There is nothing") . ".</p>");
 }
+
+// Print test page
+include_once "test.php";
 
 // Debug mode (just display params
 printf(_("<p><b>Debug mode</b><br /><i>\$username=%s<br />\$count=%d<br />\$lang=%s</i><p>"), $username, $count, $lang);
