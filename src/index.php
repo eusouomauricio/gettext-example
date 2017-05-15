@@ -89,4 +89,10 @@ include_once "test.php";
 // Debug mode (just display params
 printf(_("<p><b>Debug mode</b><br /><i>\$username=%s<br />\$count=%d<br />\$lang=%s</i><p>"), $username, $count, $lang);
 
+$language = _("Language");
+$count = _("Count");
+$name = _("Username");
+$update = _("Update data");
+print("<hr /><form action=\"\" method=\"GET\"><p><b>{$language}</b> <select name=\"lang\"><option>en</option><option>fr</option><option>de</option></select></p><p><b>{$count}</b> <select name=\"count\"><option>0</option><option>1</option><option>2</option><option>3</option></select></p><p><b>{$name}</b> <input type=\"text\" name=\"username\" /></p><p><input type=\"submit\" value=\"{$update}\" /></p></form>");
+
 ?>
